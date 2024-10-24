@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "64de1727-7f2b-4d6f-a354-63dc746c388a",
+		"name": "account_transaction",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "2116067"
+	},
+	"item": [
+		{
+			"name": "create_acc",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountno\": \"100023453456\",\r\n    \"initialBalance\"  :100000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/accounts"
+			},
+			"response": []
+		},
+		{
+			"name": "create_transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountno\": \"100023453456\",\r\n    \"initialBalance\"  :100000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/accounts"
+			},
+			"response": []
+		},
+		{
+			"name": "trans_info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/accounts/2/transactions"
+			},
+			"response": []
+		},
+		{
+			"name": "balance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/accounts/2/balance"
+			},
+			"response": []
+		},
+		{
+			"name": "account",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/accounts/2"
+			},
+			"response": []
+		}
+	]
+}
